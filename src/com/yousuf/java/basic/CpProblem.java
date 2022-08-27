@@ -8,18 +8,21 @@ public class CpProblem {
 		
 		Scanner in = new Scanner(System.in);
 		
-		int T,N;
+		int T,N,M,add = 0,mod;
 		
 		T = in.nextInt();
 		
 		for(int i = 1; i<=T; i++) {
 			
 			N = in.nextInt();
+			M = in.nextInt();
 			
-			int result = N/2;
+			add = add+N;
+			
+			mod = add % M;
 			
 			
-			System.out.println("Case #"+T+": "+result);
+			System.out.println("Case #"+T+": "+mod);
 			
 			
 		}
